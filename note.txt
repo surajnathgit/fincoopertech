@@ -1,0 +1,28 @@
+ <!-- Google Maps -->
+    <section class="map">
+      <!-- Map -->
+      <div
+        id="google-map"
+        data-zoom="10"
+        data-latitude="37.800976"
+        data-longitude="-122.428502"
+        data-color="#7c4fe0"
+        data-marker="assets/images/map-marker-blue.png"
+      ></div>
+      <div id="zoom-in"></div>
+      <div id="zoom-out"></div>
+
+      <!-- This Information will show on Click to Map Marker -->
+      <div id="map-info">
+        <div id="content">
+          <div id="siteNotice"></div>
+          <h4 id="firstHeading" class="firstHeading">Naxos Main Office</h4>
+          <div id="bodyContent">
+            <p>
+              Donec arcu nulla, semper et urna ac, laoreet porta.<br />
+              Vivamus sodales efficitur massa at rhoncus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
