@@ -60,9 +60,9 @@
 			});
 			
 			//Mobile menu open
-			$('.menu-bar').on("click", function() {
-				$('.main-menu-area').addClass('mobile-menu-open');
-			});
+			// $('.menu-bar').on("click", function() {
+			// 	$('.main-menu-area').addClass('mobile-menu-open');
+			// });
 
 			//Mobile menu close
 			$('.close-button').on("click", function() {

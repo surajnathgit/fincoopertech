@@ -3251,6 +3251,32 @@ footer .copyright a {
 
 
 
+/* customised css */
+
+.desktop-mobile{
+	width: 50%;
+}
+
+.responsive-logo{
+	margin-left: 450%;
+	width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+	.desktop-mobile{
+		width: 100%;
+	}
+
+	.responsive-logo{
+		margin-left: 0%;
+		width: 22%;
+	}
+	
+	
+}
+
+
+
 
 
 
