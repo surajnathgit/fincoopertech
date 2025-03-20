@@ -250,131 +250,75 @@
     <section class="section-box bg-grey">
       <div class="container">
         <div class="row justify-content-center">
-        <!-- Payment Section -->
-<section id="payment" class="section-box">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6">
-        <div class="payment-form">
-          <h2 class="text-center mb-4">Make a Payment</h2>
-          <form id="paymentForm">
-            <!-- Amount Input -->
-            <div class="form-group mb-3">
-              <label for="amount">Amount (INR)</label>
-              <input
-                type="number"
-                class="form-control"
-                id="amount"
-                name="amount"
-                placeholder="Enter amount"
-                required
-              />
-            </div>
-
-            <!-- Payment Method Selection -->
-            <div class="form-group mb-3">
-              <label>Select Payment Method</label>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="paymentMethod"
-                  id="creditCard"
-                  value="creditCard"
-                  checked
-                />
-                <label class="form-check-label" for="creditCard">
-                  Credit/Debit Card
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="paymentMethod"
-                  id="upi"
-                  value="upi"
-                />
-                <label class="form-check-label" for="upi">
-                  UPI
-                </label>
-              </div>
-            </div>
-
-            <!-- Credit Card Details (Hidden by default for UPI) -->
-            <div id="creditCardDetails">
-              <div class="form-group mb-3">
-                <label for="cardNumber">Card Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="cardNumber"
-                  name="cardNumber"
-                  placeholder="1234 5678 9012 3456"
-                  required
-                />
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="form-group mb-3">
-                    <label for="expiryDate">Expiry Date</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="expiryDate"
-                      name="expiryDate"
-                      placeholder="MM/YY"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-group mb-3">
-                    <label for="cvv">CVV</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cvv"
-                      name="cvv"
-                      placeholder="123"
-                      required
-                    />
+          <!-- Payment Section -->
+          <section id="payment" class="section-box">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div
+                    class="payment-form"
+                    style="
+                      background: white;
+                      padding: 2rem;
+                      border-radius: 12px;
+                      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                      border: none;
+                    "
+                  >
+                    <h2
+                      class="text-center mb-4"
+                      style="color: black; font-weight: 600; font-size: 1.75rem;"
+                    >
+                      Make a Payment
+                    </h2>
+                    <form id="paymentForm">
+                      <!-- Amount Input -->
+                      <div class="form-group mb-3">
+                        <label
+                          for="amount"
+                          style="color: black; font-weight: 500; margin-bottom: 0.5rem;"
+                        >
+                          Amount (INR)
+                        </label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="amount"
+                          name="amount"
+                          placeholder="Enter amount"
+                          value="15000"
+                          required
+                          disabled
+                          style="
+                            background: #f8f9fa;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 8px;
+                            padding: 0.75rem;
+                            color: black;
+                            font-size: 1rem;
+                          "
+                        />
+                      </div>
+    
+                      <!-- Submit Button -->
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="btn btn-primary w-100"
+                          
+                        >
+                          Proceed to Pay
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- UPI Details (Hidden by default for Credit Card) -->
-            <div id="upiDetails" class="d-none">
-              <div class="form-group mb-3">
-                <label for="upiId">UPI ID</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="upiId"
-                  name="upiId"
-                  placeholder="yourname@upi"
-                  required
-                />
-              </div>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary w-100">
-                Proceed to Pay
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          </section>
         </div>
       </div>
     </section>
-    
 
     <!-- Footer -->
     <footer>
@@ -392,32 +336,27 @@
                   Delivering excellence with integrity, innovation, and
                   unmatched dedication to our clients.
                 </p>
-
-              
               </div>
             </div>
 
-            
-
             <!-- Useful links -->
-            <div class="col-12 col-md-6 col-lg-4 res-margin  text-center">
+            <div class="col-12 col-md-6 col-lg-4 res-margin text-center">
               <div class="widget">
                 <h6>Useful Links</h6>
 
                 <ul class="footer-menu">
-                 
                   <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="/termsandcondition.html">Terms &amp; Conditions</a></li>
+                  <li>
+                    <a href="/termsandcondition.html">Terms &amp; Conditions</a>
+                  </li>
                   <li><a href="/refund-policy.html">Refund Policy</a></li>
                   <li><a href="/Payment-policy.html">Payment Policy</a></li>
-                  
-                 
                 </ul>
               </div>
             </div>
-<!-- copyright -->
+            <!-- copyright -->
             <div class="col-12 col-md-6 col-lg-4 text-center">
-                <!-- Social links -->
+              <!-- Social links -->
               <div class="footer-social">
                 <a href="#" title="Twitter"
                   ><i class="fab fa-x-twitter fa-fw"></i
@@ -428,9 +367,7 @@
                 <a href="#" title="Instagram"
                   ><i class="fab fa-instagram"></i
                 ></a>
-                <a href="#" title="Dribbble"
-                  ><i class="fab fa-dribbble"></i
-                ></a>
+                <a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a>
                 <a href="#" title="Pinterest"
                   ><i class="fab fa-pinterest fa-fw"></i
                 ></a>
@@ -438,30 +375,23 @@
 
               <div class="footer-copyright">
                 <div class="container">
-                  
-                      <!-- Text -->
-                      <p class="copyright text-center">
-                        Copyright ©
-                        <script type="text/javascript">
-                          document.write(new Date().getFullYear());
-                        </script>
-                        <a href="#" target="_blank">Fincoopers Tech India</a>. All
-                        Rights Reserved.
-                      </p>
-                    
+                  <!-- Text -->
+                  <p class="copyright text-center">
+                    Copyright ©
+                    <script type="text/javascript">
+                      document.write(new Date().getFullYear());
+                    </script>
+                    <a href="#" target="_blank">Fincoopers Tech India</a>. All
+                    Rights Reserved.
+                  </p>
                 </div>
               </div>
-            
             </div>
-          
-
-          
           </div>
         </div>
       </div>
 
       <!-- Copyright -->
-      
     </footer>
 
     <!-- Back to top -->
@@ -748,62 +678,67 @@
       })();
     </script>
 
+    <script>
+      // Toggle between Credit Card and UPI fields
+      document.addEventListener("DOMContentLoaded", function () {
+        const creditCardRadio = document.getElementById("creditCard");
+        const upiRadio = document.getElementById("upi");
+        const creditCardDetails = document.getElementById("creditCardDetails");
+        const upiDetails = document.getElementById("upiDetails");
 
-<script>
-  // Toggle between Credit Card and UPI fields
-  document.addEventListener("DOMContentLoaded", function () {
-    const creditCardRadio = document.getElementById("creditCard");
-    const upiRadio = document.getElementById("upi");
-    const creditCardDetails = document.getElementById("creditCardDetails");
-    const upiDetails = document.getElementById("upiDetails");
+        creditCardRadio.addEventListener("change", function () {
+          if (creditCardRadio.checked) {
+            creditCardDetails.classList.remove("d-none");
+            upiDetails.classList.add("d-none");
+          }
+        });
 
-    creditCardRadio.addEventListener("change", function () {
-      if (creditCardRadio.checked) {
-        creditCardDetails.classList.remove("d-none");
-        upiDetails.classList.add("d-none");
-      }
-    });
+        upiRadio.addEventListener("change", function () {
+          if (upiRadio.checked) {
+            upiDetails.classList.remove("d-none");
+            creditCardDetails.classList.add("d-none");
+          }
+        });
+      });
 
-    upiRadio.addEventListener("change", function () {
-      if (upiRadio.checked) {
-        upiDetails.classList.remove("d-none");
-        creditCardDetails.classList.add("d-none");
-      }
-    });
-  });
+      // Handle form submission
+      document
+        .getElementById("paymentForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const amount = document.getElementById("amount").value;
+          const paymentMethod = document.querySelector(
+            'input[name="paymentMethod"]:checked'
+          ).value;
 
-  // Handle form submission
-  document.getElementById("paymentForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-    const amount = document.getElementById("amount").value;
-    const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+          if (paymentMethod === "creditCard") {
+            const cardNumber = document.getElementById("cardNumber").value;
+            const expiryDate = document.getElementById("expiryDate").value;
+            const cvv = document.getElementById("cvv").value;
 
-    if (paymentMethod === "creditCard") {
-      const cardNumber = document.getElementById("cardNumber").value;
-      const expiryDate = document.getElementById("expiryDate").value;
-      const cvv = document.getElementById("cvv").value;
+            // Validate card details (basic validation)
+            if (!cardNumber || !expiryDate || !cvv) {
+              alert("Please fill in all card details.");
+              return;
+            }
+          } else if (paymentMethod === "upi") {
+            const upiId = document.getElementById("upiId").value;
 
-      // Validate card details (basic validation)
-      if (!cardNumber || !expiryDate || !cvv) {
-        alert("Please fill in all card details.");
-        return;
-      }
-    } else if (paymentMethod === "upi") {
-      const upiId = document.getElementById("upiId").value;
+            // Validate UPI ID (basic validation)
+            if (!upiId) {
+              alert("Please enter your UPI ID.");
+              return;
+            }
+          }
 
-      // Validate UPI ID (basic validation)
-      if (!upiId) {
-        alert("Please enter your UPI ID.");
-        return;
-      }
-    }
-
-    // Simulate payment processing (replace with actual payment gateway integration)
-    alert(`Payment of ₹${amount} via ${paymentMethod} is being processed...`);
-    // Redirect to a success page or show a success message
-    window.location.href = "payment-success.html";
-  });
-</script>
+          // Simulate payment processing (replace with actual payment gateway integration)
+          alert(
+            `Payment of ₹${amount} via ${paymentMethod} is being processed...`
+          );
+          // Redirect to a success page or show a success message
+          window.location.href = "payment-success.html";
+        });
+    </script>
   </body>
 
   <!-- Mirrored from www.athenastudio.co/themes/naxos/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2025 06:28:35 GMT -->
