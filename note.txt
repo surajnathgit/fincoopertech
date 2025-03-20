@@ -96,3 +96,113 @@
         </div>
       </div>
     </section>
+
+
+
+
+   --------------------
+
+
+   Priceing ////
+
+
+
+      <!-- Pricing -->
+    <section id="pricing" class="bg-grey">
+      <!-- Container -->
+      <div class="container">
+        <!-- Section title -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-6">
+            <div class="section-title text-center">
+              <h3>Flexible Pricing to Fit Your Needs</h3>
+              <p>
+                Choose a plan that matches your business size and requirements.
+                Scale effortlessly as your needs grow.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row align-items-center pricing-plans">
+          <!-- Basic Plan -->
+          <div class="col-12 col-lg-4 res-margin">
+            <div class="price-table">
+              <div class="icon icon-weather-sun"></div>
+              <h3 class="plan-type">Basic Plan</h3>
+    
+              <ul class="list-unstyled plan-list">
+                <li>Access for up to 2 back-office users</li>
+                <li>Manage up to 3 clients</li>
+                <li>Onboard up to 10 field executives</li>
+                <li>Generate up to 300 reports/month/user</li>
+                <li>Basic support and updates</li>
+              </ul>
+    
+              <a class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#enquiryModal" href="#">Book now</a>
+            </div>
+          </div>
+    
+          <!-- Standard Plan -->
+          <div class="col-12 col-lg-4 res-margin">
+            <div class="price-table plan-popular mb-4 mb-sm-5 mb-lg-0">
+              <div class="icon icon-basic-star"></div>
+              <h3 class="plan-type">Standard Plan</h3>
+    
+              <ul class="list-unstyled plan-list">
+                <li>Access for up to 2 back-office users</li>
+                <li>Manage up to 5 clients</li>
+                <li>Onboard up to 20 field executives</li>
+                <li>Generate up to 500 reports/month/user</li>
+                <li>Advanced analytics, compliance tracking, communication tools, mobile app, and performance analysis</li>
+              </ul>
+    
+              <a class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#enquiryModal" href="#">Book now</a>
+    
+              <div class="card-ribbon">
+                <span>Popular</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Premium Plan -->
+          <div class="col-12 col-lg-4">
+            <div class="price-table">
+              <div class="icon icon-basic-cards-diamonds"></div>
+              <h3 class="plan-type">Premium Plan</h3>
+    
+              <ul class="list-unstyled plan-list">
+                <li>Access for up to 5 back-office users</li>
+                <li>Manage up to 10 clients</li>
+                <li>Onboard up to 30 field executives</li>
+                <li>Generate up to 600 reports/month/user</li>
+                <li>
+                  All advanced features, including custom integrations, dedicated support, mobile app, live location tracking, route planning, and priority updates
+                </li>
+              </ul>
+    
+              <a class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#enquiryModal" href="#">Book now</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Call to Action -->
+        <div class="row">
+          <div
+            class="col-12 col-lg-8 offset-lg-2 mobile-phone wow fadeInUp"
+            data-wow-offset="10"
+            data-wow-duration="1s"
+            data-wow-delay="0.9s"
+          >
+            <img src="images/mobile-phone.png" alt="Mobile Features" />
+          </div>
+        </div>
+      </div>
+    </section>
+     
