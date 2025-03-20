@@ -250,148 +250,131 @@
     <section class="section-box bg-grey">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-10">
-            <h2 class="text-center mb-5">Privacy Policy</h2>
-            <p>
-              <strong>Introduction:</strong> Fincoopers Tech India Private
-              Limited ("we," "our," or "us") is committed to protecting your
-              privacy. This Privacy Policy explains how we collect, use,
-              disclose, and safeguard your information when you use our
-              services, including our software product Finexe, as well as any
-              related websites, applications, or services (collectively, the
-              "Services").
-            </p>
-            <hr />
+        <!-- Payment Section -->
+<section id="payment" class="section-box">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="payment-form">
+          <h2 class="text-center mb-4">Make a Payment</h2>
+          <form id="paymentForm">
+            <!-- Amount Input -->
+            <div class="form-group mb-3">
+              <label for="amount">Amount (INR)</label>
+              <input
+                type="number"
+                class="form-control"
+                id="amount"
+                name="amount"
+                placeholder="Enter amount"
+                required
+              />
+            </div>
 
-            <h4>1. Information We Collect</h4>
-            <ul>
-              <li>
-                <strong>Personal Information:</strong> We may collect personal
-                information such as your name, email address, phone number,
-                organization details, and any other information you provide when
-                signing up for or using our Services.
-              </li>
-              <li>
-                <strong>Business Information:</strong> We may collect data
-                related to your organization, including employee information,
-                vendor profiles, and transaction details.
-              </li>
-              <li>
-                <strong>System Usage Data:</strong> Information such as login
-                activity, user interactions within our software, and system
-                performance data may be collected to improve the functionality
-                of our Services.
-              </li>
-              <li>
-                <strong>Cookies and Tracking Technologies:</strong> We use
-                cookies and similar technologies to enhance user experience,
-                monitor usage, and improve our Services. You can control cookies
-                through your browser settings.
-              </li>
-            </ul>
-            <hr />
+            <!-- Payment Method Selection -->
+            <div class="form-group mb-3">
+              <label>Select Payment Method</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="paymentMethod"
+                  id="creditCard"
+                  value="creditCard"
+                  checked
+                />
+                <label class="form-check-label" for="creditCard">
+                  Credit/Debit Card
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="paymentMethod"
+                  id="upi"
+                  value="upi"
+                />
+                <label class="form-check-label" for="upi">
+                  UPI
+                </label>
+              </div>
+            </div>
 
-            <h4>2. How We Use Your Information</h4>
-            <p>
-              We use the collected information for purposes including but not
-              limited to:
-            </p>
-            <ul>
-              <li>Providing and maintaining our Services, including Finexe.</li>
-              <li>
-                Facilitating seamless communication and integration between
-                users, vendors, and system administrators.
-              </li>
-              <li>
-                Improving system performance, troubleshooting, and enhancing
-                user experience.
-              </li>
-              <li>Generating insights for business process optimization.</li>
-              <li>
-                Complying with legal obligations and regulatory requirements.
-              </li>
-            </ul>
-            <hr />
+            <!-- Credit Card Details (Hidden by default for UPI) -->
+            <div id="creditCardDetails">
+              <div class="form-group mb-3">
+                <label for="cardNumber">Card Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cardNumber"
+                  name="cardNumber"
+                  placeholder="1234 5678 9012 3456"
+                  required
+                />
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group mb-3">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="expiryDate"
+                      name="expiryDate"
+                      placeholder="MM/YY"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-3">
+                    <label for="cvv">CVV</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cvv"
+                      name="cvv"
+                      placeholder="123"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <h4>3. Information Sharing and Disclosure</h4>
-            <ul>
-              <li>
-                We do not sell or rent your personal or business information.
-              </li>
-              <li>
-                We may disclose your information to service providers and
-                third-party vendors assisting with the operation and maintenance
-                of our Services.
-              </li>
-              <li>
-                We may also disclose information to regulatory authorities or
-                legal entities as required by law, or authorized personnel
-                within your organization for collaboration and system management
-                purposes.
-              </li>
-            </ul>
-            <hr />
+            <!-- UPI Details (Hidden by default for Credit Card) -->
+            <div id="upiDetails" class="d-none">
+              <div class="form-group mb-3">
+                <label for="upiId">UPI ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="upiId"
+                  name="upiId"
+                  placeholder="yourname@upi"
+                  required
+                />
+              </div>
+            </div>
 
-            <h4>4. Data Security</h4>
-            <p>
-              We implement robust technical and organizational measures to
-              safeguard your information. However, no method of electronic
-              storage or transmission is completely secure, and we cannot
-              guarantee absolute security.
-            </p>
-            <hr />
-
-            <h4>5. Third-Party Services</h4>
-            <p>
-              Our Services may integrate with third-party applications or
-              platforms. We are not responsible for the privacy practices of
-              these third parties, and we encourage you to review their privacy
-              policies.
-            </p>
-            <hr />
-
-            <h4>6. Your Rights</h4>
-            <p>
-              Depending on your jurisdiction, you may have rights regarding your
-              personal information, such as access, correction, or deletion.
-              Contact us at
-              <a href="mailto:info@fincooperstech.com"
-                >info@fincooperstech.com</a
-              >
-              to exercise these rights.
-            </p>
-            <hr />
-
-            <h4>7. Data Retention</h4>
-            <p>
-              We retain your information as long as it is necessary to fulfill
-              the purposes outlined in this Privacy Policy or as required by
-              law.
-            </p>
-            <hr />
-
-            <h4>8. Changes to This Privacy Policy</h4>
-            <p>
-              We may update this Privacy Policy to reflect changes in our
-              practices or applicable regulations.
-            </p>
-            <hr />
-
-            <h4>9. Contact Us</h4>
-            <p>
-              If you have any questions about this Privacy Policy, please
-              contact us at:
-            </p>
-            <address>
-              Fincoopers Tech India Private Limited<br />
-              <a href="mailto:info@fincooperstech.com"
-                >info@fincooperstech.com</a
-              >
-            </address>
-          </div>
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary w-100">
+                Proceed to Pay
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         </div>
       </div>
     </section>
+    
 
     <!-- Footer -->
     <footer>
@@ -427,6 +410,7 @@
                   <li><a href="/termsandcondition.html">Terms &amp; Conditions</a></li>
                   <li><a href="/refund-policy.html">Refund Policy</a></li>
                   <li><a href="/Payment-policy.html">Payment Policy</a></li>
+                  
                  
                 </ul>
               </div>
@@ -763,6 +747,63 @@
         }
       })();
     </script>
+
+
+<script>
+  // Toggle between Credit Card and UPI fields
+  document.addEventListener("DOMContentLoaded", function () {
+    const creditCardRadio = document.getElementById("creditCard");
+    const upiRadio = document.getElementById("upi");
+    const creditCardDetails = document.getElementById("creditCardDetails");
+    const upiDetails = document.getElementById("upiDetails");
+
+    creditCardRadio.addEventListener("change", function () {
+      if (creditCardRadio.checked) {
+        creditCardDetails.classList.remove("d-none");
+        upiDetails.classList.add("d-none");
+      }
+    });
+
+    upiRadio.addEventListener("change", function () {
+      if (upiRadio.checked) {
+        upiDetails.classList.remove("d-none");
+        creditCardDetails.classList.add("d-none");
+      }
+    });
+  });
+
+  // Handle form submission
+  document.getElementById("paymentForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const amount = document.getElementById("amount").value;
+    const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+
+    if (paymentMethod === "creditCard") {
+      const cardNumber = document.getElementById("cardNumber").value;
+      const expiryDate = document.getElementById("expiryDate").value;
+      const cvv = document.getElementById("cvv").value;
+
+      // Validate card details (basic validation)
+      if (!cardNumber || !expiryDate || !cvv) {
+        alert("Please fill in all card details.");
+        return;
+      }
+    } else if (paymentMethod === "upi") {
+      const upiId = document.getElementById("upiId").value;
+
+      // Validate UPI ID (basic validation)
+      if (!upiId) {
+        alert("Please enter your UPI ID.");
+        return;
+      }
+    }
+
+    // Simulate payment processing (replace with actual payment gateway integration)
+    alert(`Payment of ₹${amount} via ${paymentMethod} is being processed...`);
+    // Redirect to a success page or show a success message
+    window.location.href = "payment-success.html";
+  });
+</script>
   </body>
 
   <!-- Mirrored from www.athenastudio.co/themes/naxos/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2025 06:28:35 GMT -->
